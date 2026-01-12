@@ -1,0 +1,283 @@
+.wrapper {
+  background-color: #FAF7ED;
+  padding: 0 64px;
+  width: 100%;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.15);
+
+
+  .toursSlider {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+  :global {
+    .slick-slide>div {
+      margin: 0 15px;
+    }
+
+    .slick-list {
+      margin: 0 -15px;
+    }
+
+   
+
+    .slick-track {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.popularButton {
+  display: none;
+}
+
+
+.headPart {
+  display: flex;
+  padding: 50px 0px 20px 0px;
+
+  .leftPart {
+
+    p {
+      color: #868686;
+      width: 450px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #474747;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #008060;
+      text-decoration: none;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      grid-gap: 10px;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    a img {
+      transition: margin-left 0.3s ease-in-out;
+    }
+
+    a:hover img {
+      margin-left: 10px;
+    }
+
+    a:not(:hover) img {
+      margin-left: 0;
+    }
+
+
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .rightPart {
+    display: flex;
+    justify-content: end;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+
+      .active {
+        background-color: #008060;
+        color: white;
+        border: 1px solid #008060;
+      }
+
+      button {
+
+        cursor: pointer;
+        color: #868686;
+        padding: 10px 25px;
+        border: 1px solid #DCDCDC;
+        margin: 7.5px 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        background-color: white;
+        border-radius: 3px;
+        transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+      }
+
+      .button:hover {
+        color: #2ACEA5;
+        border: 1px solid #2ACEA5;
+      }
+    }
+  }
+}
+
+
+
+
+
+.prev__arrow {
+  position: absolute;
+  top: 42%;
+  left: -28px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.next__arrow {
+  position: absolute;
+  top: 42%;
+  right: -30px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.toursSlider {
+  width: 100%;
+}
+
+.hr {
+  border: 1px solid #DCDCDC;
+  margin-bottom: 40px;
+  height: 0px;
+}
+
+
+.flex {
+  img {
+    display: none;
+  }
+}
+@media (max-width:1028px) {
+  .headPart .rightPart{
+    justify-content: flex-start;
+    width: 100%;
+    div{
+    width: 100%;
+    }
+  }
+}
+@media (max-width:941px) {
+  .headPart .rightPart {
+    display: none;
+  }
+  
+}
+
+@media (max-width:678px) {
+  .hr{
+    width: 93%;
+  }
+  .popularButton {
+    width: 93%;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #008060;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+
+    h3{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .headPart {
+    .leftPart {
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      span {
+        a {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .flex {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      margin-bottom: 12px;
+      display: block;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .wrapper {
+    padding: 24px;
+    padding-right: 0;
+  }
+
+  .prev__arrow {
+    position: absolute;
+    top: 42%;
+    left: -20px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .next__arrow {
+    position: absolute;
+    top: 42%;
+    right: 5px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}

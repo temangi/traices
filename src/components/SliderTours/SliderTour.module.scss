@@ -1,0 +1,40 @@
+.prev__arrow {
+  position: absolute;
+  top: 42%;
+  left: -28px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.next__arrow {
+  position: absolute;
+  top: 42%;
+  right: -30px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@media (max-width:768px) {
+  .prev__arrow , .next__arrow{
+    display: none;
+  }
+}
+.hr {
+  height: 0px;
+  border: 1px solid #DCDCDC;
+  margin-bottom: 40px;
+  height: 0px;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+@media (max-width:768px) {
+  .title{
+    font-size: 24px;
+  }
+}
