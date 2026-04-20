@@ -49,7 +49,7 @@ const Footer = () => {
         </header>
       </div>
       <footer className={scss.footer__footer}>
-          <p className={scss.footer__unTitle}>@ 2023 Kyrgyz Riders. All rights reserved</p>
+          <p className={scss.footer__unTitle}>@ 2026 Kyrgyz Riders. All rights reserved</p>
           <p>Design by @SolidDevs</p>
       </footer>
     </section>
